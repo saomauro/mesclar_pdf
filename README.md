@@ -22,18 +22,31 @@ git switch develop
 ### 2) Monte um ambiente virtual
 
 ```shell
-python -m virtualenv venv
+python -m venv venv
 ```
 
-### 3) Instalar as dependências
+### 3) Ativar o ambiente virtual
 
+#### 3.1) Windows Powershell
+```shell
+& .\venv\Scripts\activate.ps1
+```
+#### 3.2) Windows Cmd
+```shell
+venv\Scripts\activate.bat
+```
+
+### 4) Instalar as dependências
 ```shell
 pip install -r requirements.txt
 ```
 
-### 5) Gerar o executável
-
+### 5) Instalar o PyInstaller
 ```shell
-cd src
+pip install pyinstaller
+```
+
+### 6) Gerar o executável
+```shell
 pyinstaller --onefile mesclar_pdfs.py
 ```
