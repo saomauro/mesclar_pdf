@@ -1,2 +1,2 @@
 PyPDF2==3.0.1
-PySimpleGUI==4.60.4
+PySimpleGUI==5.0.4
